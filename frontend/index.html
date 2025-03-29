@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Travel Planner</h1>
+    </header>
+
+    <main>
+        <h2>Create and Manage Your Trips</h2>
+
+        <form id="trip-form">
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required>
+
+            <label for="start_date">Start Date:</label>
+            <input type="date" id="start_date" name="start_date" required>
+
+            <label for="end_date">End Date:</label>
+            <input type="date" id="end_date" name="end_date" required>
+
+            <label for="itinerary">Itinerary:</label>
+            <textarea id="itinerary" name="itinerary" required></textarea>
+
+            <button type="submit" id="submit-btn">Create Trip</button>
+        </form>
+
+        <div id="weather-info">
+            <h3>Weather will be displayed here...</h3>
+        </div>
+
+        <div id="trip-list">
+            <h2>Your Trips</h2>
+            <div id="trips-container"></div>  <!-- ✅ Container for dynamic trips -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Travel Planner</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
